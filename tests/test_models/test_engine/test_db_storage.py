@@ -106,4 +106,3 @@ class TestFileStorage(unittest.TestCase):
         self.assertEqual(state_count, 1)
         state_get = models.storage.get(State, state_id)
         self.assertEqual(state, state_get)
-
