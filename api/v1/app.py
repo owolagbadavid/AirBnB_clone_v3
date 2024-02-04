@@ -9,7 +9,7 @@ from os import environ
 app = Flask(__name__)
 app.register_blueprint(app_views)
 
-@app.teardown_appcontext()
+@app.teardown_appcontext
 def close_session(exception):
     """Closes the session"""
     storage.close()
